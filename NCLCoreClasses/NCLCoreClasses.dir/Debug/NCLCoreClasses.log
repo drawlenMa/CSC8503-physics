@@ -1,0 +1,33 @@
+﻿  Building Custom Rule D:/NCL/CSC8503 2022/NCLCoreClasses/CMakeLists.txt
+  Assets.cpp
+  SimpleFont.cpp
+D:\NCL\CSC8503 2022\NCLCoreClasses\SimpleFont.cpp(61,1): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  TextureLoader.cpp
+  TextureWriter.cpp
+  Maths.cpp
+  Matrix2.cpp
+  Matrix3.cpp
+  Matrix4.cpp
+  Plane.cpp
+  Quaternion.cpp
+  Vector2.cpp
+  Vector3.cpp
+  Vector4.cpp
+  MeshAnimation.cpp
+  MeshGeometry.cpp
+  MeshMaterial.cpp
+  RendererBase.cpp
+  ShaderBase.cpp
+  TextureBase.cpp
+  Camera.cpp
+  正在生成代码...
+  正在编译...
+  GameTimer.cpp
+  Keyboard.cpp
+  Mouse.cpp
+  Window.cpp
+  Win32Keyboard.cpp
+  Win32Mouse.cpp
+  Win32Window.cpp
+  正在生成代码...
+  NCLCoreClasses.vcxproj -> D:\NCL\CSC8503 2022\x64\Debug\NCLCoreClasses.lib
