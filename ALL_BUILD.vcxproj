@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A5941B3-7023-3271-B9E8-7EFCD9FD8975}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\NCL\CSC8503 2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/NCL/CSC8503 2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\NCL\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SD:/NCL/CSC8503 2022" "-BD:/NCL/CSC8503 2022/Build" --check-stamp-file "D:/NCL/CSC8503 2022/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeSystem.cmake;D:\NCL\CSC8503 2022\CMake\Utils.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\NCL\CSC8503 2022\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/NCL/CSC8503 2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\NCL\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SD:/NCL/CSC8503 2022" "-BD:/NCL/CSC8503 2022/Build" --check-stamp-file "D:/NCL/CSC8503 2022/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;D:\NCL\CSC8503 2022\Build\CMakeFiles\3.25.0\CMakeSystem.cmake;D:\NCL\CSC8503 2022\CMake\Utils.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\NCL\cmake-3.25.0-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\NCL\CSC8503 2022\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\NCL\CSC8503 2022\Build\ZERO_CHECK.vcxproj">
+      <Project>{79E43EBD-22ED-3238-8970-4CC0948DC16C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\NCL\CSC8503 2022\Build\CSC8503\CSC8503.vcxproj">
+      <Project>{E1DC4D96-3A23-3E60-93BB-1F66CAEA8839}</Project>
+      <Name>CSC8503</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\NCL\CSC8503 2022\Build\CSC8503CoreClasses\CSC8503CoreClasses.vcxproj">
+      <Project>{00FDFFF0-8104-36BB-9B00-65579647F613}</Project>
+      <Name>CSC8503CoreClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\NCL\CSC8503 2022\Build\NCLCoreClasses\NCLCoreClasses.vcxproj">
+      <Project>{371CF2FC-CDFC-30D0-837D-D433649A7C6D}</Project>
+      <Name>NCLCoreClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\NCL\CSC8503 2022\Build\OpenGLRendering\OpenGLRendering.vcxproj">
+      <Project>{03EB9D97-11DF-3622-9456-26076C4C9E77}</Project>
+      <Name>OpenGLRendering</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
