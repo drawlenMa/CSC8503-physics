@@ -1,0 +1,10 @@
+^D:\NCL\CSC8503 2022\OPENGLRENDERING\CMAKELISTS.TXT
+setlocal
+D:\NCL\cmake-3.25.0-windows-x86_64\bin\cmake.exe "-SD:/NCL/CSC8503 2022" "-BD:/NCL/CSC8503 2022/Build" --check-stamp-file "D:/NCL/CSC8503 2022/Build/OpenGLRendering/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

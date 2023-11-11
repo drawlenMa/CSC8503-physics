@@ -1,0 +1,14 @@
+﻿  Building Custom Rule D:/NCL/CSC8503 2022/OpenGLRendering/CMakeLists.txt
+  OGLComputeShader.h
+  OGLMesh.h
+  OGLRenderer.h
+  OGLShader.h
+  OGLTexture.h
+  OGLComputeShader.cpp
+  OGLMesh.cpp
+  OGLRenderer.cpp
+  OGLShader.cpp
+  OGLTexture.cpp
+  gl.h
+  gl.c
+  OpenGLRendering.vcxproj -> D:\NCL\CSC8503 2022\x64\Debug\OpenGLRendering.lib
